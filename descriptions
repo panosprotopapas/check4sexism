@@ -1,0 +1,4 @@
+A tool that detects the "level" of sexism in a sentence, given as a percentage. To use the tool type a sentence or pick one of the pre-selected samples and click on the "Check!" button.
+
+
+Sexist language is defined as that which demeans, ignores, or stereotypes members of either sex. In this demo, we are offering a natural language processing (NLP) tool which uses a neural network trained on a dataset consisting of sexist and non-sexist sentences. The sexist sentences have been collected after extracting specific parts of the posts found at https://everydaysexism.com/. The non-sexist sentences have been collected from subtitles of the British soap operas Eastenders and Doctors. Therefore, the detect level of sexism essentially measures "how close (far away) the given sentence is to the above sexist (non-sexist) sentences".

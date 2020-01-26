@@ -1,0 +1,5 @@
+The only endpoint used is host:port/<text>, where <text> is the text to be evaluated by the model for sexism. Default host used is 0.0.0.0 and default port 1313.
+
+At every endpoint <text> is fed into the model and the score is rounded to the nearest integer and displayed in plain text (i.e. just an integer ranging from 0 to 100 will be displayed).
+
+The text entered can be anything, including slashes "/". In fact, since all non-alhpanumeric text is removed (in Python) before evaluation, the pages host:port/foo/bar and host:port/foo bar should show the same result.

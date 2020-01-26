@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="sdx.min.css">
+        <link rel="stylesheet" href="site-layout.css">
+        <title>Swisscom AI Research Demo</title>
+
+    <link rel="stylesheet" href="basic-io-layout.css">
+    <!-- CHANGE THE STYLE HEEEEEERE -->
+    <link rel="stylesheet" href="sexism_check.css">
+
+</head>
+<body>
+<div class="site-wrapper">
+    <div class="content-wrapper">
+        <div class="header__container">
+            <nav>
+                <div class="nav__container">
+                    <div>Swisscom AI Research Demo</div>
+                </div>
+            </nav>
+            <header>
+                <div class="header__container">
+                    <img class="avatar"
+                         src="research-icon.svg">
+                    <div class="title-container">
+                        <div class="main-title">check4sexism</div>
+                        <div class="sub-title">Check a given text for sexism  <font size="3">  &emsp;  (English text only!)</font> </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="content-area">
+            <div class="colored-background">
+            </div>
+            <div class="content-stage container">
+                <div class="aix-desktop-only" style = "padding: 35px 0px";>
+                    <h1> 
+                        <font color="#82269b">
+                            <b>
+                            This demo was designed for larger screens!
+                        </b>
+                        </font>
+                    </h1>
+                </div>
+            <div class="aix-demo-content">
+            </div>
+        <div id="tab-input" class="row aix-row">
+          <!-- LEFT COLUMN: USER INPUT -->
+            <div class="col-lg-6">
+                <div class="input-field input-multiline aix-textarea">
+                    <textarea class="test" id="input-submit" placeholder="Please enter a sentence or choose one of the samples.">
+                    </textarea>
+                    
+                </div>            
+                <button id="btn-submit" class="aix-button button button--primary button--full" onclick="submit()">
+                    <span>Check!</span>
+
+
+            </button>
+            
+            </div>
+            <!-- RIGHT COLUMN: RESULTS AREA -->
+            <div class="col-lg-6">          
+                    <div class="sample-container">
+                        <div class="sample-container__header">
+                            <h4><center>Sample phrases
+                            </center></h4>
+                            <i id="btn-refresh" class="btn-sample-refresh icon icon-071-retry icon--s3 icon--flip-horizontal aix-invisible" aria-hidden="true"></i>
+                        </div>
+
+
+                        <div id="sample-data" class="row">
+                            <div class="col-md-6">
+                                <div id="sample-0" data-index="0" class="sample-box" onclick="test1()">
+                                    <center>She is great at cooking and cleaning.
+                                    </center>
+                                </div>
+                            </div>
+                              <div class="col-md-1">
+                            </div>
+                            <div class="col-md-6">
+                                <div id="sample-1" data-index="1" class="sample-box"onclick="test2()">
+                                    <center>Women are great at cooking and cleaning.
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div id="sample-2" data-index="2" class="sample-box" onclick="test3()">
+                                    <center> I bought some sausage from the supermarket today.
+                                    </center>
+                                </div>
+                            </div>
+                              <div class="col-md-1">
+                            </div>
+                            <div class="col-md-6">
+                                <div id="sample-3" data-index="3" class="sample-box" onclick="test4()">
+                                    <center>Do you like eating sausage?
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div id="sample-4" data-index="4" class="sample-box" onclick="test5()">
+                                    <center>Rapists must be in jail.
+                                    </center>
+                                </div>
+                            </div>
+                             <div class="col-md-1">
+                            </div>
+                            <div class="col-md-6">
+                                <div id="sample-5" data-index="5" class="sample-box" onclick="test6()">
+                                    <center>This dress attracts rapists.
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+              </div>
+
+
+
+
+
+
+            </div>
+
+              <div  class="aix-result-content">
+        
+                               <p id="result42" style="text-align:center; color:#82269b">                            </p> </div> 
+        </div>    
+    </div>
+
+    </div>
+
+  <div class="footer footer--compact footer--light footer-inner">
+            <a class="logo">
+                <span class="logo-lifeform" aria-label="Swisscom Logo">
+            </span></a>
+            <ul class="nav-items">
+                <li class="nav-item">
+                    <a href="https://swisscom.ch/ai" class="nav-link" target="_blank">
+                        AI for your business?
+                    </a>
+                </li>
+            </ul>
+        </div>
+</div>
+
+
+
+
+    <script src="sdx.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
+    </script>
+
+    <script src="basic-io-layout.js"></script>
+
+<!-- CHANGE THE SCRIPT HEEEEEERE -->
+    <script src="sexism_check.js"></script>
+
+</body>
+</html>
