@@ -22,8 +22,7 @@ Sexist language is defined as that which demeans, ignores, or stereotypes member
 
   ```sudo docker run -p 1313:1313 -ti sexism_check```.
 
-3. Open the `~/sexism_check/front_end/sexism_check.html html` using your browser.
-4. If everything is working correctly, by selecting each sample box and clicking "Check!", moving from left to right and top to bottom you should receive results of 9%, 95%, 6%, 88%, 12%, and 86% respectively.
+3. The (local) url http://0.0.0.0:1313/your_text_to_check should display a number ranging from 0 to 100, which is the percentage of sexism detected by the tool in `your_text_to_check`.
 
 ### Folder contents
 
